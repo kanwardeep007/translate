@@ -28,6 +28,7 @@ gem 'typhoeus','~> 1.3.1'
 group :development, :test do
   gem 'pry', '~> 0.12.2'
   gem 'pry-rails', '~> 0.3.9'
+  gem 'rspec-rails', '~> 3.8.2'
 end
 
 group :development do
