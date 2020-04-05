@@ -11,5 +11,9 @@ RUN gem install bundler
 RUN bundle install
 COPY . /usr/src/app
 
+COPY entry_point.sh /usr/bin/
+RUN chmod +x /usr/bin/entry_point.sh
+ENTRYPOINT ["entry_point.sh"]
+
 EXPOSE 3000
 CMD ["bundle", "exec", "rails", "server", "-e", "development", "-b", "0.0.0.0"]
