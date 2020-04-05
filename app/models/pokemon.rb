@@ -1,3 +1,4 @@
+# This class is concerned with fetch pokemon information
 class Pokemon
   ENDPOINT='https://pokeapi.co/api/v2/pokemon-species/'
 

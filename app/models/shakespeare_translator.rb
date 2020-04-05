@@ -1,6 +1,9 @@
+# This class is responsible for translating
+# english to shakespeare form
 class ShakespeareTranslator
 
   ENDPOINT='https://api.funtranslations.com/translate/shakespeare'
+
   def translate(string)
     # return ResponseWrapper.new("some fixed value", 200, true)
     fetch_translation(string)
