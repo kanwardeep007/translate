@@ -33,10 +33,10 @@ class Pokemon
         break
       end
     end
-    generate_response(description)
+    generate_desc_response(description)
   end
 
-  def generate_response(description)
+  def generate_desc_response(description)
     if description == nil
       ResponseWrapper.new('Unable to fetch pokemon description', 400, false)
     else
